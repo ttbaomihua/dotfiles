@@ -1,0 +1,101 @@
+{
+  "workbench.colorTheme": "Default Light Modern",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.wordWrap": "on",
+  "editor.detectIndentation": true,
+  "editor.rulers": [80, 120],
+  "editor.renderWhitespace": "all",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  /* =============== vim settings =============== */
+  "vim.surround": true,
+  // "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+        "before": [":"],
+        "commands": [
+            "workbench.action.showCommands",
+        ],
+        "silent": true
+    },
+
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["-"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-l>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    },
+    {
+      "before": ["g", "b"],
+      "commands": ["workbench.action.navigateBack"],
+    },
+    {
+      "before": ["g", "f"],
+      "commands": ["workbench.action.navigateForward"],
+    },
+    {
+      "before": ["t", "n"],
+      "commands": [":tabnext"],
+    },
+    {
+      "before": ["t", "p"],
+      "commands": [":tabprev"],
+    },
+    {
+      "before": ["t", "c"],
+      "commands": [":tabclose"],
+    },
+    {
+      "before": ["<Leader>", "e"],
+      "commands": ["workbench.explorer.fileView.focus"]
+    },
+    { 
+      "before": ["<Leader>", "s", "v"],
+      "commands": [":vsplit"] 
+    },
+    { 
+      "before": ["<Leader>", "s", "h"],
+      "commands": [":split"] 
+    },
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  // To improve performance
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  }
+  /* ============================================ */
+}
+
